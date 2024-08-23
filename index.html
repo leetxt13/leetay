@@ -31,34 +31,34 @@
     <script src="src/main.js" defer></script>
   </head>
   <body>
-    <header>
-      <div>
-        <img src="images/leetay50.ico" alt="logo" />
-        <h1><a href="#">Leetay</a></h1>
+    <header class="header">
+      <div class="header__logo">
+        <img src="images/leetay50.ico" alt="logo" class="header__logo__img" />
+        <h1 class="header__logo__title"> <a href="#">Leetay</a></h1>
       </div>
       <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#work">My work</a></li>
-          <li><a href="#testimonial">Testimonial</a></li>
-          <li><a href="#contact">Contact</a></li>
+        <ul class="header__menu">
+          <li class="header__menu__item active"><a href="#home">Home</a></li>
+          <li class="header__menu__item"><a href="#about">About</a></li>
+          <li class="header__menu__item"><a href="#skills">Skills</a></li>
+          <li class="header__menu__item"><a href="#work">Growth</a></li>
+          <li class="header__menu__item"><a href="#testimonial">Stories</a></li>
+          <li class="header__menu__item"><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <!-- home -->
-      <section id="home">
-        <img src="images/leetayremovebg.png" alt="leetay's homepage" />
-        <h2>안녕하세요, 이곳의 주인공 이태이입니다</h2>
-        <p>귀염둥이 둘째 아들입니다.</p>
-        <a href="#contact">엄마아빠와 연락하기</a>
+      <section id="home" >
+        <img class="home__image" src="images/leetayremovebg.png" alt="leetay's homepage" />
+        <h2 class="home__title">안녕하세요, 이곳의<br> <strong class="home__title--strong">멋쟁이</strong> <br>주인공 이태이입니다</h2>
+        <p class="home__description">" 귀염둥이 둘째 아들입니다 "</p>
+        <a class="home__contactBtn" href="#contact">엄마아빠와 연락하기</a>
       </section>
       <!-- About -->
-      <section id="about">
-        <h2>About me</h2>
-        <p>
+      <section id="about" class="section">
+        <h2 class="title">About me</h2>
+        <p class="description">
           저는 2023년 12월 31일, 2023년의 마지막 날에 드라마틱하게
           태어났습니다.<br />
           저희 가족은 아빠, 엄마, 누나, 그리고 저 총 4명입니다. 저는 귀염둥이
@@ -93,9 +93,9 @@
         </ul>
       </section>
       <!-- skills -->
-      <section id="skills">
-        <h2>My skills</h2>
-        <p>
+      <section id="skills" class="section">
+        <h2 class="title">My skills</h2>
+        <p class="description">
           저는 급격하게 성장하고 있습니다. 여러가지 신체적인 능력이 향상 되고
           있어요.
         </p>
@@ -155,10 +155,10 @@
           </section>
         </div>
       </section>
-      <!-- work -->
-      <section id="work">
-        <h2>My growth diary</h2>
-        <p>2024년 제 성장과정을 담은 사진을 구경해보세요.</p>
+      <!-- growth -->
+      <section id="growthDiary" class="section">
+        <h2 class="title">My growth diary</h2>
+        <p class="description">2024년 제 성장과정을 담은 사진을 구경해보세요.</p>
         <ul>
           <li>
             <button>ALL<span>22</span></button>
@@ -366,19 +366,19 @@
         </div>
       </section>
       <!-- testimonials -->
-      <section id="testimonial">
-        <h2>trivial stories</h2>
-        <p>the stories about me that are funny or trivial</p>
+      <section id="stories" class="section">
+        <h2 class="title">trivial stories</h2>
+        <p class="description">the stories about me that are funny or trivial</p>
       <ul>
         <li>
           <img src="images/story/story1.jpg" alt="story1">
-          <div><p>이태이는 딱 하루 차이로 누나와 연년생 자매가 되었다</p>
+          <div><p>(S1)이태이는 딱 하루 차이로 누나와 연년생 자매가 되었다</p>
           <p>(생년월일) 이조이 : 2022.7.1.  / 이태이 : 2023.12.31.</p></div>
         </li>
         <li>
           <img src="images/story/story2.jpg" alt="story2">
           <div>
-            <p>의외로 남매간 사이는 좋은 편이다. 다만 누나인 조이는 아직 자기 물건에 대한 집착이 있다.</p>
+            <p>(S2)의외로 남매간 사이는 좋은 편이다. 다만 누나인 조이는 아직 자기 물건에 대한 집착이 있다.</p>
             <p>이 나이대에는 보통 그런 편이라고 하는데 주의관찰이 다소 필요해 보인다</p>
           </div>
         </li>
@@ -392,9 +392,9 @@
       </aside>
     </main>
     <!-- footer -->
-    <footer id="contact">
-     <h2>Let's talk with us</h2>
-<p>daddy email: leetxt13@naver.com</p>
+    <footer id="contact" class="section">
+     <h2 class="title">Let's talk with us</h2>
+<p class="description">daddy email: leetxt13@naver.com</p>
  <ul>
 <li>
  <a href="tel:010-2460-8538" title="전화번호" target="_blank"
