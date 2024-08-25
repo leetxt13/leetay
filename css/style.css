@@ -251,3 +251,25 @@ button:focus {
   filter: brightness(150%);
   padding: 1rem;
 }
+
+/*skills bar */
+.bar__bg {
+  height: 3px;
+  background-color: var(--color-primary-variant);
+}
+.bar__value {
+  height: 3px;
+  background-color: var(--color-accent);
+}
+.bar {
+  display: flex;
+  flex-flow: column;
+  gap: 0.1rem;
+  padding: 1rem;
+}
+.bar__metadata {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0.3rem;
+  margin-bottom: 0.4rem;
+}
