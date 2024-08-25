@@ -41,8 +41,8 @@
           <li class="header__menu__item active"><a href="#home">Home</a></li>
           <li class="header__menu__item"><a href="#about">About</a></li>
           <li class="header__menu__item"><a href="#skills">Skills</a></li>
-          <li class="header__menu__item"><a href="#work">Growth</a></li>
-          <li class="header__menu__item"><a href="#testimonial">Stories</a></li>
+          <li class="header__menu__item"><a href="#growth">Growth</a></li>
+          <li class="header__menu__item"><a href="#stories">Stories</a></li>
           <li class="header__menu__item"><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -56,7 +56,7 @@
         <a class="home__contactBtn" href="#contact">엄마아빠와 연락하기</a>
       </section>
       <!-- About -->
-      <section id="about" class="section">
+      <section id="about" class="section max-container">
         <h2 class="title">About me</h2>
         <p class="description">
           저는 2023년 12월 31일, 2023년의 마지막 날에 드라마틱하게
@@ -64,29 +64,31 @@
           저희 가족은 아빠, 엄마, 누나, 그리고 저 총 4명입니다. 저는 귀염둥이
           막내입니다.
         </p>
-        <ul>
-          <li>
-            <i class="fa-solid fa-baby"></i>
-            <p>출생일</p>
-            <p>2023년 12월 31일 oo시 새벽</p>
-            <p>
-              당시에 산부인과 병실에서 출산하는 사람이 한명도 없었어요. 모두
-              새해초 출산을 목표로 했나봅니다.<br />
-              덕분에 부모님은 병실 1층을 여유롭게 쓰고 편히 지냈다고 하네요.
+        <ul class="intros">
+          <li class="intro">
+            <i class="fa-solid fa-baby intro__icon"></i>
+            <p class="intro__title">출생일</p>
+            <p class="intro__subtitle">2023년 12월 31일 oo시 새벽</p>
+            <p class="intro__subtitle">
+              당시에 산부인과 병실에서 출산하는 사람이 한 명도 없었어요. 부모님들이
+              새해초에 출산하는 것을 선호해서 그런 것인지,
+              저로 인해 연말에 병원에 들어온 부모님은 병실 한 층을 여유롭게 쓰고 편히 지냈다고 하네요.
             </p>
           </li>
-          <li>
-            <i class="fa-solid fa-calendar-days"></i>
-            <p>개월수</p>
-            <p>현재는 생후 9개월입니다.</p>
+          <li class="intro">
+            <i class="fa-solid fa-calendar-days intro__icon"></i>
+            <p class="intro__title">개월수</p>
+            <div class="intro2__subtitle__container">
+            <p class="intro__subtitle">현재는 생후 9개월입니다.</p>
+          </div>
           </li>
-          <li>
-            <i class="fa-solid fa-stairs"></i>
-            <p>발달상황</p>
-            <p>
-              키는 73cm정도고 몸무게는 9.3kg입니다. 요즘 부쩍 식욕이 늘어서
-              이유식 1통을 냠냠 비우고 <br />
-              분유도 120ml정도 연속으로 먹고 있습니다. 그래서 그런지 체중이 많이
+          <li class="intro">
+            <i class="fa-solid fa-stairs intro__icon"></i>
+            <p class="intro__title">발달상황</p>
+            <p class="intro__subtitle">
+              ('24.8. 기준) 키는 73cm정도고 몸무게는 9.3kg입니다. 요즘 부쩍 식욕이 늘어서
+              이유식 1통을 냠냠 비우고 
+              분유도 연속으로 먹고 있습니다. 그래서 그런지 체중이 많이
               늘었습니다.
             </p>
           </li>
@@ -94,14 +96,16 @@
       </section>
       <!-- skills -->
       <section id="skills" class="section">
+        <div class="max-container">
         <h2 class="title">My skills</h2>
         <p class="description">
           저는 급격하게 성장하고 있습니다. 여러가지 신체적인 능력이 향상 되고
           있어요.
         </p>
-        <div>
-          <section>
-            <p>physical skills</p>
+       
+        <div class="skills-gridContainer">
+          <section class="skills__physical">
+            <p class="skills__title">physical skills</p>
             <ul>
               <li>
                 <div>
@@ -137,16 +141,18 @@
               </li>
             </ul>
           </section>
-          <section>
-            <p>mental skills</p>
+
+          <section class="skills__mental">
+            <p class="skills__title">mental skills</p>
             <ul>
               <li>옹알이</li>
               <li>애착</li>
               <li>낯가림</li>
             </ul>
           </section>
-          <section>
-            <p>좋아하는 것</p>
+
+          <section class="skills__like">
+            <p class="skills__title">좋아하는 것</p>
             <ul>
               <li>춤추는 뽀로로 장난감</li>
               <li>소리나는 물건</li>
@@ -154,9 +160,11 @@
             </ul>
           </section>
         </div>
+     
+      </div>
       </section>
       <!-- growth -->
-      <section id="growthDiary" class="section">
+      <section id="growth" class="section">
         <h2 class="title">My growth diary</h2>
         <p class="description">2024년 제 성장과정을 담은 사진을 구경해보세요.</p>
         <ul>
@@ -367,7 +375,7 @@
       </section>
       <!-- testimonials -->
       <section id="stories" class="section">
-        <h2 class="title">trivial stories</h2>
+        <h2 class="title">My Trivial stories</h2>
         <p class="description">the stories about me that are funny or trivial</p>
       <ul>
         <li>
