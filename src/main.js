@@ -1,6 +1,6 @@
 // Header를 스크롤시 다크 스타일링 적용
 const header = document.querySelector('.header');
-console.dir(header);
+// console.dir(header);
 
 const headerHeight = header.offsetHeight;
 document.addEventListener('scroll', () => {
@@ -34,4 +34,20 @@ document.addEventListener('scroll', () => {
   }
 });
 
-// 테스트
+// 모바일 헤더 toggle버튼을 누르면 메뉴바 나타나고 사리지게
+
+const toggleBtn = document.querySelector('.header__toggleBtn');
+const headerMenu = document.querySelector('.header__menu');
+toggleBtn.addEventListener('click', (e) => {
+  console.log(e.target.nodeName);
+  if (e.target.nodeName == 'I') {
+    headerMenu.classList.toggle('open');
+  }
+});
+
+headerMenu.addEventListener('click', (e) => {
+  console.log(e.target.nodeName);
+  if (e.target.nodeName == 'LI' || e.target.nodeName == 'A') {
+    headerMenu.classList.remove('open');
+  }
+});

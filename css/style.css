@@ -547,7 +547,7 @@ button:focus {
   .header {
     flex-direction: column;
     align-items: start;
-    opacity: 0; /*header가 안 보이게 설정*/
+    opacity: 1; /*header가 안 보이게 설정*/
   }
   .header--dark {
     background-color: var(--color-primary);
@@ -558,8 +558,24 @@ button:focus {
     text-align: center;
     gap: 20px;
     padding-top: 2rem;
+    opacity: 0;
   }
   .header__nav {
     width: 100%;
+  }
+  .header__toggleBtn {
+    color: red;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid white;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .header__menu.open {
+    opacity: 1;
+    background-color: var(--color-primary);
   }
 }
