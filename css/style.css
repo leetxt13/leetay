@@ -84,6 +84,7 @@ button:focus {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+
   padding: 1rem;
   transition: all 300ms ease;
 }
@@ -461,8 +462,12 @@ button:focus {
   line-height: 70px;
   color: var(--color-accent);
   box-shadow: 5px 5px 0px 0px rgba(109, 40, 217);
+  transition: opacity 0.3s ease-in-out;
+  transition: transform 0.5s ease-in-out;
 }
-
+.arrowup_link--movingEvent {
+  transform: rotate(360deg);
+}
 /*responsive web */
 @media screen and (max-width: 768px) {
   .section {
@@ -542,8 +547,7 @@ button:focus {
   .header {
     flex-direction: column;
     align-items: start;
-    height: 23rem;
-    opacity: 1; /*header가 안 보이게 설정*/
+    opacity: 0; /*header가 안 보이게 설정*/
   }
   .header--dark {
     background-color: var(--color-primary);
