@@ -84,7 +84,6 @@ button:focus {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-
   padding: 1rem;
   transition: all 300ms ease;
 }
@@ -110,6 +109,9 @@ button:focus {
 }
 .header__menu__item {
   padding: 8px 16px;
+  border-bottom: 1px solid transparent;
+  /*borderbottom을 transparent로 준 이유는*/
+  /*메뉴아이템 hover가 될떄 글꼴이 아래로 밀리는 것 방지를 위한것*/
 }
 .header__menu__item:hover {
   border-bottom: 1px solid var(--color-accent);
@@ -121,6 +123,9 @@ button:focus {
 .header--dark {
   background-color: var(--color-primary);
   box-shadow: 5px 5px 0px 0px rgba(109, 40, 217);
+}
+.header__toggleBtn {
+  display: none;
 }
 /*home*/
 #home {
@@ -471,7 +476,7 @@ button:focus {
 /*responsive web */
 @media screen and (max-width: 768px) {
   .section {
-    padding: 3rem 2rem;
+    padding: 4rem 2rem;
   }
   .title {
     font-size: 2rem;
@@ -553,29 +558,29 @@ button:focus {
     background-color: var(--color-primary);
   }
   .header__menu {
-    width: 100%;
     flex-direction: column;
     text-align: center;
     gap: 20px;
     padding-top: 2rem;
-    opacity: 0;
+    padding-right: 0;
+    display: none;
   }
   .header__nav {
     width: 100%;
   }
   .header__toggleBtn {
+    display: block;
     color: red;
     position: fixed;
     top: 1rem;
     right: 1rem;
-    width: 2rem;
-    height: 2rem;
-    border: 1px solid white;
-    font-size: 1.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 2rem;
     text-align: center;
   }
   .header__menu.open {
-    opacity: 1;
+    display: flex;
     background-color: var(--color-primary);
   }
 }

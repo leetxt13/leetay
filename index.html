@@ -28,7 +28,9 @@
     <!-- css -->
     <link rel="stylesheet" href="css/style.css" />
     <!-- Javascript :defer는 HTML해독전에 자바스크립트를 불러옴-->
-    <script src="src/main.js" defer></script>
+    <script type="module" src="src/main.js" defer></script>
+    <script type="module" src="src/projects.js" defer></script>
+    <!-- javascript는 각각 참조되지 않는 독립되도록 하기 위해 type="module"을 넣음 -->
   </head>
   <body>
     <header class="header">
@@ -38,14 +40,15 @@
       </div>
       <nav class="header__nav">
         <ul class="header__menu">
-          <li class="header__menu__item active"><a href="#home">Home</a></li>
-          <li class="header__menu__item"><a href="#about">About</a></li>
-          <li class="header__menu__item"><a href="#skills">Skills</a></li>
-          <li class="header__menu__item"><a href="#growth">Growth</a></li>
-          <li class="header__menu__item"><a href="#family">Family</a></li>
-          <li class="header__menu__item"><a href="#birthday">Birthday Party</a></li>
-        </ul>
-        <div class="header__toggleBtn"><i class="fa-solid fa-bars"></i></div>
+          <a href="#home"><li class="header__menu__item active">Home</li></a>
+          <a href="#about"><li class="header__menu__item">About</li></a>
+          <a href="#skills"><li class="header__menu__item">Skills</li></a>
+          <a href="#growth"><li class="header__menu__item">Growth</li></a>
+          <a href="#family"><li class="header__menu__item">Family</li></a>
+          <a href="#birthday"><li class="header__menu__item">Birthday Party</li></a>
+        </ul> 
+        <!-- aria-label은 장애인을 위한 내용 -->
+        <div class="header__toggleBtn" aria-label="navigation menu toggle button"><i class="fa-solid fa-bars"></i></div>
       </nav>
     </header>
     <main>

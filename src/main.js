@@ -1,3 +1,5 @@
+'use strict';
+
 // Header를 스크롤시 다크 스타일링 적용
 const header = document.querySelector('.header');
 // console.dir(header);
@@ -40,7 +42,7 @@ const toggleBtn = document.querySelector('.header__toggleBtn');
 const headerMenu = document.querySelector('.header__menu');
 toggleBtn.addEventListener('click', (e) => {
   console.log(e.target.nodeName);
-  if (e.target.nodeName == 'I') {
+  if (e.target.nodeName == 'I' || e.target.nodeName == 'DIV') {
     headerMenu.classList.toggle('open');
   }
 });
