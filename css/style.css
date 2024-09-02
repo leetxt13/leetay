@@ -16,6 +16,7 @@
 
   /* size*/
   --size-max-width: 1200px;
+  --size-max-width-small: 1080px;
 }
 
 * {
@@ -71,6 +72,10 @@ button:focus {
 }
 .max-container {
   max-width: var(--size-max-width);
+  margin: auto;
+}
+.max-container-small {
+  max-width: var(--size-max-width-small);
   margin: auto;
 }
 /*header*/
@@ -338,6 +343,11 @@ button:focus {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 1rem;
+  transition: all 250ms ease-in;
+}
+.growth__photos.anim-out {
+  opacity: 0;
+  transform: scale(0.96) translateY(20px);
 }
 .growth__photo {
   position: relative;
@@ -345,9 +355,12 @@ button:focus {
   border-radius: 10px;
   overflow: hidden;
 }
+.growth__photo.hide {
+  display: none;
+}
 .growth__image {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   object-fit: cover;
 }
 .growth__metadata {
@@ -515,6 +528,7 @@ button:focus {
   .growth__photos {
     grid-template-columns: repeat(1, 1fr);
     gap: 2rem;
+    margin: auto 2rem;
   }
   .growth__image {
     width: 21rem;
