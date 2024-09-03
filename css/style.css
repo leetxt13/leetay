@@ -22,6 +22,9 @@
 * {
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth; /*intersectionOb 사용시 부드럽게 스크롤링*/
+}
 body {
   font-family: 'Open sans', sans-serif;
   margin: 0;
@@ -338,6 +341,7 @@ button:focus {
 }
 
 /* growth photos */
+
 .growth__photos {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
