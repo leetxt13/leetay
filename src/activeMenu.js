@@ -36,7 +36,7 @@ function callback(entries) {
       entry.isIntersecting &&
       entry.intersectionRatio >= 0.95;
   });
-  console.log('보이는', visibleItems);
+  // console.log('보이는', visibleItems);
   const navIndex = selectLastOne
     ? sectionIds.length - 1
     : firstActiveItems(visibleItems);

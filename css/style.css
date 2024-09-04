@@ -531,11 +531,14 @@ button:focus {
   }
   .growth__photos {
     grid-template-columns: repeat(1, 1fr);
-    gap: 2rem;
-    margin: auto 2rem;
+    gap: 5rem;
+    /* margin: auto 2rem; */
+  }
+  .growth__photo {
+    width: 100%;
   }
   .growth__image {
-    width: 21rem;
+    width: 20rem;
     height: 25rem;
     object-fit: cover;
   }
