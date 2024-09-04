@@ -339,7 +339,10 @@ button:focus {
   opacity: 1;
   top: 0;
 }
-
+.growth__media__title {
+  margin: 1rem auto;
+  margin-top: 3rem;
+}
 /* growth photos */
 
 .growth__photos {
@@ -402,6 +405,15 @@ button:focus {
   color: orange;
   font-size: 1.3rem;
   margin-bottom: 1.5rem;
+}
+.growth__media {
+  width: 30rem;
+  height: 30rem;
+  margin: 3rem auto;
+}
+.growth__media iframe {
+  width: 100%;
+  height: 100%;
 }
 /*family*/
 .fams {
@@ -541,6 +553,11 @@ button:focus {
     width: 20rem;
     height: 25rem;
     object-fit: cover;
+  }
+  .growth__media {
+    width: 18rem;
+    height: 33rem;
+    margin: 3rem auto;
   }
   .fam {
     flex-flow: column;
