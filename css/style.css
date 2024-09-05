@@ -203,7 +203,7 @@ button:focus {
 }
 
 .home__divider .shape-fill {
-  fill: hsl(255, 100%, 1%);
+  fill: var(--color-primary-variant);
 }
 
 /*about*/
