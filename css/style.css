@@ -140,6 +140,11 @@ button:focus {
 /*home*/
 #home {
   background-color: var(--color-primary);
+  background: linear-gradient(
+    180deg,
+    rgb(1, 12, 32) 50%,
+    rgba(5, 10, 19, 1) 100%
+  );
   color: var(--color-text);
   padding: 5rem 1rem;
   padding-top: 7rem;
