@@ -179,7 +179,7 @@ button:focus {
   padding: 0.2rem 0.5rem;
   font-size: 0.85rem;
   font-weight: bold;
-  width: 150px;
+  width: 200px;
   height: 40px;
   margin-top: 40px;
   line-height: 36px;
@@ -212,7 +212,13 @@ button:focus {
 .home__divider .shape-fill {
   fill: var(--color-primary-variant);
 }
-
+/
+.home__arrow{
+  position :absolute;
+  bottom : 0;
+  left : 25rem;
+  font-size : 2rem;
+}
 /*about*/
 .intros {
   display: flex;
@@ -643,6 +649,7 @@ button:focus {
     flex-direction: column;
     align-items: start;
     opacity: 1; /*header가 안 보이게 설정*/
+    
   }
   .header--dark {
     background-color: var(--color-primary);
@@ -668,6 +675,9 @@ button:focus {
     height: 2.5rem;
     font-size: 2rem;
     text-align: center;
+  }
+  .header__nav.open {
+    background-color: var(--color-primary);
   }
   .header__menu.open {
     display: flex;
