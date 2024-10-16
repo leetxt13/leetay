@@ -556,6 +556,22 @@ transform : translateX(4.5rem);
   font-size: 0.9rem;
   color: orange;
 }
+.birthday__link-joyhome{
+  border : 1.5px solid var(--color-blue);
+  border-radius: 5%;
+  padding : 0.2rem;
+}
+.birthday__description{
+  background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(196,140,169,1) 35%, rgba(0,212,255,1) 150%);
+  display:inline-block;
+  text-align:left;
+  border-radius: 1rem;
+  padding : 0rem 1rem;
+  border : 2px solid pink;
+  color:rgb(179, 255, 0);
+  font-weight: bold;
+}
 
 /*arrowup*/
 
