@@ -283,6 +283,7 @@ transform : translateX(4.5rem);
 
 .intro__subtitle {
   font-size: 0.8rem;
+  margin-bottom:0.5rem;
 }
 .intro:hover .intro__icon {
   transform: rotate(-30deg) scale(1.1);
